@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf7">
+  <meta name="description" content="クロコが制作したコンテンツの一覧です。">
+  <title>クロコ制作コンテンツ</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fbfaf7;
+      --surface: #ffffff;
+      --ink: #34343b;
+      --muted: #777782;
+      --line: #ece9e5;
+      --lavender: #eeeafd;
+      --pink: #fbecef;
+      --blue: #eaf2fb;
+      --mint: #eaf5ef;
+      --accent: #7566a8;
+      --shadow: 0 12px 34px rgba(69, 58, 85, .07);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      letter-spacing: .025em;
+    }
+    .page {
+      width: min(880px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 64px 0 36px;
+    }
+    header { text-align: center; margin-bottom: 38px; }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #97919f;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .22em;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(27px, 5vw, 38px);
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+    .title-mark {
+      width: 54px;
+      height: 4px;
+      margin: 18px auto 0;
+      border-radius: 99px;
+      background: linear-gradient(90deg, #d9d0f3, #f1d5dd, #d4e8dc);
+    }
+    .content-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .site-card {
+      display: flex;
+      min-height: 236px;
+      flex-direction: column;
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .site-card:nth-child(1) .card-icon { background: var(--lavender); }
+    .site-card:nth-child(2) .card-icon { background: var(--pink); }
+    .card-icon {
+      display: grid;
+      width: 48px;
+      height: 48px;
+      place-items: center;
+      margin-bottom: 19px;
+      border-radius: 15px;
+      color: #70638e;
+    }
+    .card-icon svg { width: 25px; height: 25px; }
+    h2 {
+      margin: 0 0 9px;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .description {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .open-link {
+      display: flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      margin-top: auto;
+      border-radius: 12px;
+      background: #f1eef9;
+      color: #65578f;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .18s ease, background .18s ease;
+    }
+    .site-card:nth-child(2) .open-link { background: #f9eef1; color: #986a7a; }
+    .open-link:hover { transform: translateY(-2px); background: #e9e3f7; }
+    .site-card:nth-child(2) .open-link:hover { background: #f5e3e9; }
+    .open-link svg { width: 15px; height: 15px; }
+    footer {
+      margin-top: 42px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      text-align: center;
+      font-size: 12px;
+    }
+    footer a { color: #7566a8; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 620px) {
+      .page { width: min(460px, calc(100% - 30px)); padding-top: 44px; }
+      header { margin-bottom: 28px; }
+      .content-list { grid-template-columns: 1fr; gap: 15px; }
+      .site-card { min-height: 218px; padding: 22px; }
+      footer { margin-top: 32px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">KROKO'S CONTENTS</p>
+      <h1>クロコ制作コンテンツ</h1>
+      <div class="title-mark" aria-hidden="true"></div>
+    </header>
+
+    <section class="content-list" aria-label="制作コンテンツ一覧">
+      <article class="site-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="8" r="3.2"></circle>
+            <path d="M3.5 19c.4-3.1 2.4-4.8 5.5-4.8s5.1 1.7 5.5 4.8"></path>
+            <path d="M16 5.5a3 3 0 0 1 0 5.8M17 14.5c2.1.6 3.3 2.1 3.5 4.5"></path>
+          </svg>
+        </div>
+        <h2>北海道ぐりぐらプロフメーカー</h2>
+        <p class="description">誰でも簡単にプロフィールを作成できます</p>
+        <a class="open-link" href="https://kroko-3.github.io/HKDTKProfile/" target="_blank" rel="noopener noreferrer">
+          サイトを開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9"></path><path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"></path></svg>
+        </a>
+      </article>
+
+      <article class="site-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.64 5.64l2.12 2.12M16.24 16.24l2.12 2.12M18.36 5.64l-2.12 2.12M7.76 16.24l-2.12 2.12"></path>
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="m10.5 10.5 3 3m0-3-3 3"></path>
+          </svg>
+        </div>
+        <h2>くすぐるーれっと</h2>
+        <p class="description">組み合わせは無限大！</p>
+        <a class="open-link" href="https://kroko-3.github.io/TickleRoulette/" target="_blank" rel="noopener noreferrer">
+          サイトを開く
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9"></path><path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"></path></svg>
+        </a>
+      </article>
+    </section>
+
+    <footer>
+      作成者：<a href="https://x.com/K_ro_K_o" target="_blank" rel="noopener noreferrer">https://x.com/K_ro_K_o</a>
+    </footer>
+  </main>
+</body>
+</html>
